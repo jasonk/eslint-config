@@ -1,0 +1,23 @@
+module.exports = {
+  rules : {
+    'capitalized-comments'         : 'off',
+    'class-methods-use-this'       : 'off',
+    'func-name-matching'           : 'off',
+    'line-comment-position'        : 'off',
+    'lines-around-directive'       : 'off',
+    'max-depth'                    : 'off',
+    'max-lines'                    : 'off',
+    'max-params'                   : 'off',
+    'max-statements'               : 'off',
+    'multiline-ternary'            : 'off',
+    'no-multi-assign'              : 'off',
+    'no-plusplus'                  : 'off',
+    'no-useless-rename'            : 'off',
+    'no-useless-return'            : 'off',
+    'object-curly-newline'         : 'off',
+    'object-property-newline'      : 'off',
+    'prefer-destructuring'         : 'off',
+    'sort-keys'                    : 'off',
+    'no-restricted-properties'     : 'off',
+  },
+};

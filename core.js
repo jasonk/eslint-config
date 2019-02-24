@@ -10,13 +10,20 @@ module.exports = {
     sourceType                  : 'module',
     allowImportExportEverywhere : false,
     ecmaFeatures                : {
-      experimentalObjectRestSpread  : true,
       legacyDecorators              : true,
     },
   },
   globals       : {
   },
-  settings : {
+  settings  : {
     'import/resolver' : { node : { extensions : [ '.js', '.json' ] } },
   },
+  overrides : [
+    /* TODO - Figure out how to make this work
+    {
+      files   : [ "*.test.js", "*.spec.js" ],
+      rules   : require( './rules/tests' ),
+    },
+    */
+  ],
 };

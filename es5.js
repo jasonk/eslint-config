@@ -18,7 +18,6 @@ module.exports = {
     sourceType                  : 'module',
     allowImportExportEverywhere : false,
     ecmaFeatures                : {
-      experimentalObjectRestSpread  : true,
       legacyDecorators              : false,
     },
   },

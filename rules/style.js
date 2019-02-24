@@ -9,7 +9,7 @@ module.exports = {
       'allowSingleLine' : true,
     } ],
     // require camel case names
-    'camelcase'                 : 'warn',
+    'camelcase'                 : 'off',
     // enforce spacing before and after comma
     'comma-spacing'             : [ 'error', {
       'before' : false,
@@ -125,12 +125,7 @@ module.exports = {
     // disallow trailing whitespace at the end of lines
     'no-trailing-spaces'            : 'warn',
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle'          : [ 'error', {
-      allow                 : [],
-      allowAfterThis        : true,
-      allowAfterSuper       : true,
-      enforceInMethodNames  : false,
-    } ],
+    'no-underscore-dangle'          : 'off',
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary
@@ -195,9 +190,9 @@ module.exports = {
     // require or disallow spaces inside parentheses
     'space-in-parens' : [ 'error', 'always' ],
     // require spaces around operators
-    'space-infix-ops' : 'warn',
+    'space-infix-ops' : 'off',
     // Require or disallow spaces before/after unary operators
-    'space-unary-ops' : [ 'warn', { words : true, nonwords : false } ],
+    'space-unary-ops' : 'off',
     // require or disallow a space immediately following the // or /*
     // in a comment
     'spaced-comment'  : [ 'error', 'always', { exceptions : [ '-', '+' ] } ],
@@ -222,9 +217,7 @@ module.exports = {
     // require non-block statements to be single-line
     'nonblock-statement-body-position' : [ 'error', 'beside' ],
     'implicit-arrow-linebreak'         : [ 'error', 'beside' ],
-    'lines-between-class-members'      : [ 'error', 'always', {
-      exceptAfterSingleLine : true,
-    } ],
+    'lines-between-class-members'      : 'off',
     // 'multiline-comment-style'          : [ 'error', 'starred-block' ],
     'multiline-comment-style'          : 'off',
     'semi-style'                       : [ 'error', 'last' ],

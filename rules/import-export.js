@@ -74,7 +74,8 @@ module.exports = {
 
     // disallow webpack loader syntax
     'import/no-webpack-loader-syntax'    : 'error',
-    'import/dynamic-import-chunkname'    : 'error',
+    // require dynamic imports to specify webpackChunkName
+    'import/dynamic-import-chunkname'    : 'off',
 
     // Warn when files have multiple exports in different locations..
     'import/group-exports'               : 'off',

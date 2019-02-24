@@ -91,24 +91,21 @@ module.exports = {
     'no-loop-func'         : 'error',
     // disallow magic numbers
     // http://eslint.org/docs/rules/no-magic-numbers
-    'no-magic-numbers'     : [ 'warn', {
-      ignore             : [],
-      ignoreArrayIndexes : true,
-      enforceConst       : true,
-      detectObjects      : false,
-    } ],
-    // disallow use of multiple spaces
-    'no-multi-spaces'      : 'warn',
+    'no-magic-numbers'     : 'off',
     // disallow use of multiline strings
-    'no-multi-str'         : [ 'warn', {
+    'no-multi-str'         : 'warn',
+    // disallow use of multiple spaces, except in specific places
+    'no-multi-spaces'      : [ 'warn', {
       ignoreEOLComments : true,
       exceptions        : {
-        // allow spacing to align object properties
+        // allow spacing to align colons in object properties
         Property            : true,
         // allow spacing to align equals signs in declarations
         VariableDeclarator  : true,
         // allow spacing to align `from` in imports
         ImportDeclaration   : true,
+        // allows spacing to align colons in switch cases
+        SwitchCase          : true,
       },
     } ],
     // disallow reassignments of native objects
@@ -126,11 +123,11 @@ module.exports = {
     // var foo = 'Copyright \251';
     'no-octal-escape'      : 'error',
     // disallow reassignment of function parameters
-    'no-param-reassign'    : 'error',
+    'no-param-reassign'    : 'off',
     // disallow use of process.env - All the env reading should happen
     // in one place, preferably in a configuration library, and in
     // that one place you can override this.
-    'no-process-env'       : 'off',
+    'no-process-env'       : 'error',
     // disallow usage of __proto__ property
     'no-proto'             : 'error',
     // disallow declaring the same variable more then once
@@ -151,7 +148,7 @@ module.exports = {
       {
         selector    : 'ForInStatement',
         message     : [
-          'The `for ... in` statement can be problematic, since it`,
+          'The `for ... in` statement can be problematic, since it',
           'includes inherited properties.  You probably want either',
           '`for...of` or something like `_.each` instead.',
         ],

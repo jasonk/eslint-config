@@ -5,4 +5,17 @@ module.exports = {
   parserOptions : {
     ecmaFeatures : { 'jsx' : true },
   },
+  settings      : {
+    react     : {
+      version               : 'detect',
+      propWrapperFunctions  : [
+        'forbidExtraProps',
+        { property : 'freeze', object : 'Object' },
+      ],
+      linkComponents        : [
+        { name : 'Link', linkAttribute : 'to' },
+        { name : 'NavLink', linkAttribute : 'to' },
+      ],
+    },
+  },
 };

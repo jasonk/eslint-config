@@ -1,5 +1,7 @@
 module.exports = {
   env     : { node : true, es6 : true },
+  plugins : [ 'node' ],
+  extends : [ 'plugin:node/recommended' ],
   rules   : {
     // enforce return after a callback
     'callback-return'       : 'off',

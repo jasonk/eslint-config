@@ -1,12 +1,8 @@
+// * For projects using ES6
 module.exports = {
-  'env' : {
-    'es6' : true,
-  },
-  'parserOptions' : {
-    'ecmaVersion'  : 6,
-    'sourceType'   : 'module',
-  },
-  'rules' : {
+  env           : { es6 : true },
+  extends       : [ './es5' ].map( require.resolve ),
+  rules         : {
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
     'arrow-body-style'        : 'off',
@@ -67,7 +63,7 @@ module.exports = {
     // suggest using the spread operator instead of .apply()
     'prefer-spread'          : 'warn',
     // suggest using Reflect methods where applicable
-    'prefer-reflect'         : 'warn',
+    'prefer-reflect'         : 'off',
     // use rest parameters instead of arguments
     // http://eslint.org/docs/rules/prefer-rest-params
     'prefer-rest-params'     : 'warn',

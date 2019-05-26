@@ -48,26 +48,19 @@ module.exports = {
     // Enforce a convention in module import order
     'import/order'                       : 'off',
     // Require a newline after the last import/require in a group
-    'import/newline-after-import'        : "error",
+    'import/newline-after-import'        : 'error',
     // Forbid mutable exports
     'import/no-mutable-exports'          : 'error',
     // Allow for anonymous default exports
     'import/no-anonymous-default-export' : 'warn',
-
-    // require an empty line after the imports
-    'import/newline-after-import'        : 'error',
-
     // don't allow import to have absolute paths
     'import/no-absolute-path'            : 'error',
-
     // disallow importing from the same path more than once
     // http://eslint.org/docs/rules/no-duplicate-imports
     'no-duplicate-imports'               : 'error',
-
     // disallow specific imports
     // http://eslint.org/docs/rules/no-restricted-imports
     'no-restricted-imports'              : 'off',
-
     // import sorting
     // http://eslint.org/docs/rules/sort-imports
     'sort-imports'                       : 'off',
@@ -76,13 +69,10 @@ module.exports = {
     'import/no-webpack-loader-syntax'    : 'error',
     // require dynamic imports to specify webpackChunkName
     'import/dynamic-import-chunkname'    : 'off',
-
     // Warn when files have multiple exports in different locations..
     'import/group-exports'               : 'off',
-
     // Importing yourself is an error..
     'import/no-self-import'              : 'error',
-
     // Make sure we are importing with the minimum path segments
     'import/no-useless-path-segments'   : 'error',
 

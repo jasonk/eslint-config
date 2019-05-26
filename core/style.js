@@ -98,7 +98,7 @@ module.exports = {
     'newline-before-return'         : 'off',
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
-    'newline-per-chained-call'      : [ 'error', { ignoreChainWithDepth : 3 } ],
+    'newline-per-chained-call'      : 'off',
     // disallow use of the Array constructor
     'no-array-constructor'          : 'error',
     // disallow use of the continue statement
@@ -188,14 +188,16 @@ module.exports = {
       named     : 'never',
     } ],
     // require or disallow spaces inside parentheses
-    'space-in-parens' : [ 'error', 'always' ],
+    'space-in-parens'                  : [ 'error', 'always' ],
     // require spaces around operators
-    'space-infix-ops' : 'off',
+    'space-infix-ops'                  : 'off',
     // Require or disallow spaces before/after unary operators
-    'space-unary-ops' : 'off',
+    'space-unary-ops'                  : 'off',
     // require or disallow a space immediately following the // or /*
     // in a comment
-    'spaced-comment'  : [ 'error', 'always', { exceptions : [ '-', '+' ] } ],
+    'spaced-comment'                   : [ 'error', 'always', {
+      exceptions : [ '-', '+' ],
+    } ],
     // require regex literals to be wrapped in parentheses
     'wrap-regex'                       : 'off',
     // don't allow files to have a BOM
@@ -222,9 +224,6 @@ module.exports = {
     'multiline-comment-style'          : 'off',
     'semi-style'                       : [ 'error', 'last' ],
 
-    'switch-colon-spacing'             : [ 'error', {
-      after  : true,
-      before : true,
-    } ],
+    'switch-colon-spacing'             : 'off',
   },
 };

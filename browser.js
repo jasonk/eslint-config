@@ -1,6 +1,5 @@
+// * For browser-based projects.
 module.exports = {
-  extends : [
-    './core',
-  ].map( require.resolve ),
+  extends : [ './index' ].map( require.resolve ),
   env     : { browser : true },
 };
